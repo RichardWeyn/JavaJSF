@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<ui:composition template="/login.xhtml">
+	<ui:define name="header">
+	    En-tête
+	</ui:define>
+	<ui:define name="content">
+	<br/><h1>Entrez votre mot de passe</h1>
+	<h2>Si vous ne connaissez pas votre mot de passe soyez peu créatifs...</h2>
+	<br/><br/>
+	<h:form>
+		<h:outputLabel>Pseudo : </h:outputLabel><h:inputText id="pseudo" ></h:inputText><br/>
+		<h:outputLabel>Password : </h:outputLabel><h:inputSecret id="password" ></h:inputSecret><br/>
+		<h:commandButton type="submit" value="Valider"></h:commandButton><br/>
+	</h:form>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	</ui:define>
+	<ui:define name="footer">
+	    Pied de page
+	</ui:define>
+</ui:composition>
+</html>
