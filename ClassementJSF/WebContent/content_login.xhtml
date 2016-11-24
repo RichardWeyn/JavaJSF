@@ -8,32 +8,23 @@
 
 <ui:composition template="/login.xhtml">
 	<ui:define name="header">
-	    En-tête
+	    Entête
 	</ui:define>
 	<ui:define name="content">
-	<br/><h1>Entrez votre mot de passe</h1>
-	<h2>Si vous ne connaissez pas votre mot de passe soyez peu créatifs...</h2>
-	<br/><br/>
-	<h:form>
-		<h:outputLabel>Pseudo : </h:outputLabel><h:inputText id="pseudo" ></h:inputText><br/>
-		<h:outputLabel>Password : </h:outputLabel><h:inputSecret id="password" ></h:inputSecret><br/>
-		<h:commandButton type="submit" value="Valider"></h:commandButton><br/>
-	</h:form>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
+	<h1>Entrez votre pseudo et votre mot de passe</h1>
+		<h2>Si vous ne connaissez pas votre mot de passe soyez un peu
+			créatif...</h2>
+	    <h:form>
+				<h:outputLabel for="pseudo" style="font-weight: bold;">Pseudo</h:outputLabel> : 
+				<h:inputText id="pseudo" value=""/> <br/><br/>
+				<h:outputLabel for="mdp" style="font-weight: bold;">Mot de passe</h:outputLabel> : 
+				<h:inputSecret id="mdp" /> <br/><br/>
+				<h:commandButton type="submit" value="Envoyer" /><br/>
+		</h:form>
 	</ui:define>
 	<ui:define name="footer">
-	    Pied de page
+	<br></br>
+	    Pied
 	</ui:define>
 </ui:composition>
 </html>
